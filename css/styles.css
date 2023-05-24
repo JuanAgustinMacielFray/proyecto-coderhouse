@@ -18,6 +18,25 @@ a {
 /* Cierre de reinicio de css */
 
 
+/*========Para que el footer quede abajo========*/
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+
+
+}
+/*========cierre footer abajo========*/
+
+
 
 /*========Header Mobile========*/
 
@@ -554,11 +573,14 @@ text-align: center;
 }
 
 .caja-redes {
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    justify-content: center;
+display: flex;
+margin-top: 50px;
+font-size: 13px;
 }
 
+.span-redes {
+font-size: 20px;
+}
 /*========Cierre Main HOMBRE Mobil========*/}
 
 
@@ -577,6 +599,7 @@ height: 250px;
 /*========Cierre Main HOMBRE tablet========*/}
 
 /*========Main HOMBRE desktop========*/
+@media (min-width:1024px) {
 .productos-hombre {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -585,4 +608,19 @@ height: 250px;
 width: 100%;
 height: auto;
 }
-/*========cierre Main HOMBRE desktop========*/
+.caja-redes { 
+    gap: 200px;
+}
+/*========cierre Main HOMBRE desktop========*/}
+
+.caja-redes {
+    display: flex;
+    margin-top: 50px;
+    font-size: 13px;
+    width: 100%;
+    justify-content: center;
+    }
+    
+    .span-redes {
+    font-size: 20px;
+    }
