@@ -1,0 +1,19 @@
+@media (min-width:400px) and (max-width:768px) {
+.productos-accesorios {
+    display: flex;
+}
+.img-producto {
+    width: 350px;
+}
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+    .productos-accesorios {
+        display: flex;
+        flex-direction: row;
+    }
+    .img-producto {
+        width: 300px;
+    }
+
+}

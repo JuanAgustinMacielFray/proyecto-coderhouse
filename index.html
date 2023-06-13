@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Zapatour</title>
+    <meta name="description" content="Ofrecemos los mejores precios y calidad en las zapatillas mas nuevas del mercado">
+    <title>Las mejores zapatillas | Zapatour</title>
 </head>
 
 <body class="body">
 
 <header class="header">
+
+    <!-- Logo y titulo -->
 
     <div class="grid-cajas">
         <div class="caja-h1-logo">
@@ -18,11 +22,15 @@
             <a href="index.html"><h1 class="header-titulo">ZapaTour</h1></a>
         </div>
 
+        <!-- Boton buscar tienda -->
+
         <div class="caja-boton-buscar-tienda">
             <form action="" class="boton-buscar-tienda">
                 <input type="submit" value="Buscar tienda">
             </form>
         </div>
+
+        <!-- Boton ayuda -->
 
         <div class="caja-boton-ayuda">
             <form action="" class="boton-ayuda">
@@ -30,16 +38,22 @@
             </form>
         </div>
 
+
     <div class="caja-barra-navegacion">
         <nav class="barra-navegacion">
             <ul class="lista-nav">
-                <li class="lista-nav-item"><a href="./pages/hombre.html">Hombre</a></li>
-                <li class="lista-nav-item"><a href="./pages/mujer.html">Mujer</a></li>
-                <li class="lista-nav-item"><a href="./pages/niño.html">Niño/a</a></li>
-                <li class="lista-nav-item"><a href="./pages/accesorios.html">Accesorios</a></li>
+
+            <!-- Secciones -->
+
+                <li class="lista-nav-item"><a href="./pages/hombre.html"><button type="button" class="btn btn-outline-light">Hombre</button></a></li>
+                <li class="lista-nav-item"><a href="./pages/mujer.html"><button type="button" class="btn btn-outline-light">Mujer</button></a></li>
+                <li class="lista-nav-item"><a href="./pages/niño.html"><button type="button" class="btn btn-outline-light">Niño/a</button></a></li>
+                <li class="lista-nav-item"><a href="./pages/accesorios.html"><button type="button" class="btn btn-outline-light">Accesorios</button></a></li>
             </ul>
         </nav>
     </div>
+
+    <!-- Boton busqueda -->
 
     <div class="caja-boton-busqueda">
         <form action="" class="boton-busqueda">
@@ -48,9 +62,6 @@
             <input type="submit" value="Buscar">
         </form>
     </div>
-
-
-
 
     <div class="caja-cuotas">
         <span class="cuotas">6 cuotas sin interes</span>
@@ -61,14 +72,48 @@
 
 <main>
 
-    <img src="./img/predator.PNG" class="publicidad-predator" alt="Imagen de botines predator nuevos rosa con negro">
 
+<section class="container">
+
+    <!-- Carusel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/predator.PNG" class="d-block w-100" alt="Imagen ilustrativa de botines predator marca adiidas negros con rosa">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/adidas-cartel.PNG" class="d-block w-100" alt="Imagen ilustrativa zapatillas para running nuevas naranjas adizero sl">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/adidas-propaganda.jpg" class="d-block w-100" alt="imagen ilustrativa nuevas zapatillas adizero color verde claro con rosa creadas para ganar">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+</section>
 
 <div class="caja-fotos">
 
-    <section>
+    <!-- Caja de fotos -->
+
+    <section class="section-caja">
         <h2 class="h2-botines">Botines</h2>
-        <article>
+
+        <article class="article-fotos">
 
             <div class="caja-fotos-futbol">
             <img src="./img/futbol.jpg" class="productos-index" alt="imagen ilustrativa de la seccion futbol persona jugando al futbol">
@@ -79,9 +124,10 @@
 
 
 
-    <section>
+    <section  class="section-caja">
         <h2 class="h2-running">Running</h2>
-        <article>
+
+        <article class="article-fotos">
 
             <div class="caja-fotos-running">
             <img src="./img/running.jpg" class="productos-index" alt="imagen ilustrativa de la seccion running persona corriendo">
@@ -92,9 +138,9 @@
 
 
 
-    <section>
+    <section  class="section-caja">
         <h2 class="h2-zapatillas">Zapatillas</h2>
-        <article>
+        <article class="article-fotos">
 
             <div class="caja-fotos-zapatillas">
             <img src="./img/zapatillas.jpg" class="productos-index" alt="imagen ilustrativa de la seccion zapatillas foto de zapatillas">
@@ -104,9 +150,9 @@
     </section>
 
 
-        <section>
+        <section  class="section-caja">
             <h2 class="h2-accesorios">Accesorios</h2>
-            <article>
+            <article class="article-fotos">
 
             <div class="caja-fotos-accesorios">
                 <img src="./img/accesorios.jpg" class="productos-index" alt="imagen ilustrativa de la seccion accesorios foto de hombre con una gorra">
@@ -119,6 +165,8 @@
 
 <div class="los-mas-vendidos">
     <section>
+
+    <!-- Imagenes de los productos mas vendidos -->
 
         <span class="span-mas-vendidos">Los mas vendidos</span>
 
@@ -134,19 +182,23 @@
 </div>
 
 
+    <!-- Boton suscribirse -->
+
     <div class="suscribite">
 
-            <span>¡Suscribite y obtene $600 de regalo!</span>
+            <strong class="strong-suscribite">¡Suscribite y obtene $600 de regalo!</strong>
             <p>Ademas recibi novedades y promociones exclusivas en tu email</p>
-            <form>
+            <form class="form-suscribite">
                 <label for="nombre-usuario">Ingresa tu email</label>
                 <input type="text" placeholder="Ingresa tu email">
-                <input type="submit" value="Suscribirme">
+                <input type="submit" class="boton-suscribir" value="Suscribirme">
             </form>
 
 
     </div>
 
+
+    <!-- Navega por Marcas -->
 
     <div class="div-marcas">
 
@@ -181,6 +233,7 @@
         <p class="copyright">Copyright</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 

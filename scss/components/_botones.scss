@@ -1,0 +1,33 @@
+/*Boton comprar*/
+.boton {
+    border-radius: 10px;
+    width: 80px;
+}
+
+.boton:hover {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    transition-duration: 0.5s;
+    }
+/*Cierre Boton comprar*/
+
+
+/*INDEX boton suscribir*/
+    .boton-suscribir {
+        background-color: $color-rojo;
+        border-radius: 15px;
+        width: 140px;
+        color: white;
+        }
+
+    .boton-suscribir:hover {
+        background-color: green;
+        width: 160px;
+        height: 40px;
+        color: white;
+        transition-duration: 0.5s;
+    }
+/*Cierre INDEX boton suscribir*/

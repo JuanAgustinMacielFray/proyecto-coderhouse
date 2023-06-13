@@ -1,0 +1,28 @@
+/*Carta de productos*/
+
+.productos-accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    background-color: $color-gris;
+    border: $color-gris;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.img-producto {
+ width: 400px;
+}
+
+.precio {
+    font-size: 19px;
+}
+
+

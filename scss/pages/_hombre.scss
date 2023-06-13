@@ -1,0 +1,66 @@
+/*========Header HOMBRE mobile========*/
+@media(min-width:400px) and (max-width:768px) {
+
+/*Barra navegacion*/
+    .lista-nav {
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 45px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+/*Cierre Barra navegacion*/
+
+/*Boton buscar tienda ayuda y realizar busqueda*/
+    .caja-boton-buscar-tienda {
+        display: none;
+    }
+
+    .caja-boton-ayuda {
+        display: none;
+    }
+
+    .caja-boton-busqueda {
+        display: none;
+    }
+/*Cierre Boton buscar tienda ayuda y realizar busqueda*/
+
+/*6 cuotas sin interes*/
+    .caja-cuotas {
+        display: flex;
+        justify-content: center;
+    }
+/*6 cuotas sin interes*/
+
+/*========Cierre Header HOMBRE media========*/
+
+/*========Main HOMBRE mobile========*/
+
+.caja-redes {
+display: flex;
+margin-top: 50px;
+font-size: 13px;
+}
+
+.span-redes {
+font-size: 20px;
+}
+
+.nav-hombre {
+    background-color: $color-blanco;
+}
+/*========Cierre Main HOMBRE Mobil========*/}
+
+
+/*========Main HOMBRE desktop========*/
+@media (min-width:1024px) {
+
+/*Redes sociales*/
+.caja-redes {
+    gap: 200px;
+}
+/*Cierre Redes sociales*/
+
+
+/*========cierre Main HOMBRE desktop========*/}
