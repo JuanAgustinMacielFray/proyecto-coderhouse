@@ -1,0 +1,28 @@
+.preguntas-frecuentes {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.acordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.strong-acordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}

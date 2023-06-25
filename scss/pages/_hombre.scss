@@ -1,7 +1,7 @@
 /*========Header HOMBRE mobile========*/
 @media(min-width:400px) and (max-width:768px) {
 
-/*Barra navegacion*/
+    /*Barra navegacion*/
     .lista-nav {
         text-align: center;
         font-size: 1.1rem;
@@ -10,57 +10,57 @@
         justify-content: center;
         gap: 25px;
     }
-/*Cierre Barra navegacion*/
 
-/*Boton buscar tienda ayuda y realizar busqueda*/
-    .caja-boton-buscar-tienda {
-        display: none;
-    }
+    /*Cierre Barra navegacion*/
 
-    .caja-boton-ayuda {
-        display: none;
-    }
+    /*Boton buscar tienda ayuda y realizar busqueda*/
 
     .caja-boton-busqueda {
-        display: none;
+    display: none;
     }
-/*Cierre Boton buscar tienda ayuda y realizar busqueda*/
 
-/*6 cuotas sin interes*/
+    /*Cierre Boton buscar tienda ayuda y realizar busqueda*/
+
+    /*6 cuotas sin interes*/
     .caja-cuotas {
         display: flex;
         justify-content: center;
     }
-/*6 cuotas sin interes*/
 
-/*========Cierre Header HOMBRE media========*/
+    /*6 cuotas sin interes*/
 
-/*========Main HOMBRE mobile========*/
+    /*========Cierre Header HOMBRE media========*/
 
-.caja-redes {
-display: flex;
-margin-top: 50px;
-font-size: 13px;
+    /*========Main HOMBRE mobile========*/
+
+    .caja-redes {
+        display: flex;
+        margin-top: 50px;
+        font-size: 13px;
+    }
+
+    .span-redes {
+        font-size: 20px;
+    }
+
+    .nav-hombre {
+        background-color: $color-blanco;
+    }
+
+    /*========Cierre Main HOMBRE Mobil========*/
 }
-
-.span-redes {
-font-size: 20px;
-}
-
-.nav-hombre {
-    background-color: $color-blanco;
-}
-/*========Cierre Main HOMBRE Mobil========*/}
 
 
 /*========Main HOMBRE desktop========*/
 @media (min-width:1024px) {
 
-/*Redes sociales*/
-.caja-redes {
-    gap: 200px;
+    /*Redes sociales*/
+    .caja-redes {
+        gap: 200px;
+    }
+
+    /*Cierre Redes sociales*/
+
+
+    /*========cierre Main HOMBRE desktop========*/
 }
-/*Cierre Redes sociales*/
-
-
-/*========cierre Main HOMBRE desktop========*/}

@@ -5,7 +5,7 @@ $color-gris: rgb(202, 202, 202);
 $color-azul: #0000FF;
 $color-verde: #006400;
 $color-celeste: #00BFFF;
-$font-principal:"Verdana", sans-serif;
+$font-principal: "Verdana", sans-serif;
 
 /* Reinicio de css */
 * {
@@ -22,6 +22,7 @@ ul,
 ol {
     list-style: none;
 }
+
 /* Cierre de reinicio de css */
 
 
@@ -40,6 +41,7 @@ footer {
     margin-top: auto;
 
 }
+
 /*========cierre footer abajo========*/
 
 
@@ -51,18 +53,21 @@ footer {
 .logo {
     width: 100px;
 }
+
 /**cierre imagen de logo**/
 
 /*Color de fondo gris*/
 .body {
     background-color: $color-gris;
 }
+
 /*Cierre Color de fondo gris*/
 
 /*Resultados de busqueda en secciones*/
 .resultados-strong {
-margin: 10px;
+    margin: 10px;
 }
+
 /*Cierre Resultados de busqueda en secciones*/
 
 
@@ -70,6 +75,7 @@ margin: 10px;
 .titulo-redes {
     font-size: 20px;
 }
+
 /*Institucional*/
 .quienes-somos {
     display: flex;
@@ -77,6 +83,7 @@ margin: 10px;
     font-size: 15;
     margin-top: 20px;
 }
+
 /*Institucional*/
 
 /*Ayuda*/
@@ -86,162 +93,172 @@ margin: 10px;
     font-size: 15;
     margin-top: 20px;
 }
+
 /*Cierre ayuda*/
 
 
 /*Redes sociales*/
 .icono-facebook {
-color: $color-azul;
-display: flex;
-gap: 8px;
-font-size: 15;
-margin-top: 20px;
+    color: $color-azul;
+    display: flex;
+    gap: 8px;
+    font-size: 15;
+    margin-top: 20px;
 }
 
 .icono-instagram {
-color:$color-rojo;
-display: flex;
-gap: 4px;
-font-size: 15;
-margin-top: 20px;
-}
-
-.icono-twitter {
-    color:$color-celeste;
+    color: $color-rojo;
     display: flex;
     gap: 4px;
     font-size: 15;
     margin-top: 20px;
-    }
+}
+
+.icono-twitter {
+    color: $color-celeste;
+    display: flex;
+    gap: 4px;
+    font-size: 15;
+    margin-top: 20px;
+}
+
 /*Cierre Redes sociales*/
 
 /*Centro atencion al cliente*/
 .dias-atencion {
-display: flex;
-gap: 8px;
-font-size: 15;
-margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    font-size: 15;
+    margin-top: 20px;
 }
 
 .icono-contacto {
-display: flex;
-gap: 8px;
-font-size: 15;
-margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    font-size: 15;
+    margin-top: 20px;
 }
 
 .icono-whatsapp {
-color:$color-verde;
-display: flex;
-gap: 8px;
-font-size: 15;
-margin-top: 20px;
+    color: $color-verde;
+    display: flex;
+    gap: 8px;
+    font-size: 15;
+    margin-top: 20px;
 }
 
 
 .icono-telefono {
-display: flex;
-gap: 8px;
-font-size: 15;
-margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    font-size: 15;
+    margin-top: 20px;
 }
+
 /*Cierre centro atencion al cliente*/
 
 /*Cierre redes*/
 
 /*Color titulo*/
 .header-titulo {
-color: $color-blanco;
+    color: $color-blanco;
 }
+
 /*Cierre Color titulo*/
 
 @media(min-width:400px) and (max-width:1020px) {
 
-/*Redes*/
-.titulo-redes {
-    font-size: 15px;
-
-}
-/*Institucional*/
-.quienes-somos {
-    display: flex;
-    gap: 8px;
-    font-size: 10;
-
-}
-/*Institucional*/
-
-/*Ayuda*/
-.preguntas-frecuentes {
-    display: flex;
-    gap: 8px;
-    font-size: 10;
-
-}
-/*Cierre ayuda*/
-
-
-/*Redes sociales*/
-.icono-facebook {
-color: $color-azul;
-display: flex;
-gap: 8px;
-font-size: 10;
-
-}
-
-.icono-instagram {
-color:$color-rojo;
-display: flex;
-gap: 8px;
-font-size: 10;
-
-}
-
-.icono-twitter {
-    color:$color-celeste;
-    display: flex;
-    gap: 8px;
-    font-size: 10;
+    /*Redes*/
+    .titulo-redes {
+        font-size: 15px;
 
     }
-/*Cierre Redes sociales*/
 
-/*Centro atencion al cliente*/
-.dias-atencion {
-    display: flex;
-    gap: 8px;
-    font-size: 10;
+    /*Institucional*/
+    .quienes-somos {
+        display: flex;
+        gap: 8px;
+        font-size: 10;
 
+    }
+
+    /*Institucional*/
+
+    /*Ayuda*/
+    .preguntas-frecuentes {
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+
+    }
+
+    /*Cierre ayuda*/
+
+
+    /*Redes sociales*/
+    .icono-facebook {
+        color: $color-azul;
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+
+    }
+
+    .icono-instagram {
+        color: $color-rojo;
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+
+    }
+
+    .icono-twitter {
+        color: $color-celeste;
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+
+    }
+
+    /*Cierre Redes sociales*/
+
+    /*Centro atencion al cliente*/
+    .dias-atencion {
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+
+    }
+
+    .icono-contacto {
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+
+    }
+
+    .icono-whatsapp {
+        color: $color-verde;
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+    }
+
+
+    .icono-telefono {
+        display: flex;
+        gap: 8px;
+        font-size: 10;
+        margin: 15px;
+    }
+
+    .caja-redes {
+        gap: 20px;
+    }
+
+    /*Cierre centro atencion al cliente*/
+
+    /*Cierre redes*/
+
+    /*Cierre media*/
 }
-
-.icono-contacto {
-    display: flex;
-    gap: 8px;
-    font-size: 10;
-
-}
-
-.icono-whatsapp {
-color:$color-verde;
-display: flex;
-gap: 8px;
-font-size: 10;
-}
-
-
-.icono-telefono {
-    display: flex;
-    gap: 8px;
-    font-size: 10;
-    margin:15px;
-}
-
-.caja-redes {
-    gap: 20px;
-}
-/*Cierre centro atencion al cliente*/
-
-/*Cierre redes*/
-
-/*Cierre media*/}

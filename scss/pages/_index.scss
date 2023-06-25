@@ -1,4 +1,3 @@
-
 /**Imagenes de los mas vendidos**/
 .los-mas-vendidos {
     width: 100%;
@@ -7,6 +6,7 @@
 .mas-vendido {
     width: 100%;
 }
+
 /**Imagenes de los mas vendidos**/
 
 
@@ -14,6 +14,7 @@
 .navega-por-marcas {
     width: 100%;
 }
+
 /**Imagenes marcas**/
 
 
@@ -21,46 +22,52 @@
 
 @media(min-width:400px) and (max-width:768px) {
 
-/*Carrusel*/
-.container {
-    display: none;
-}
-/*Cierre Carrusel*/
+    /*Carrusel*/
+    .container {
+        display: none;
+    }
+
+    /*Cierre Carrusel*/
 
 
-/*Titulo e Imagen con logo*/
-    .caja-h1-logo{
+    /*Titulo e Imagen con logo*/
+    .caja-h1-logo {
         color: $color-negro;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-/*Cierre Titulo e Imagen con logo*/
 
-/*Boton buscar tienda*/
+    /*Cierre Titulo e Imagen con logo*/
+
+    /*Boton buscar tienda*/
     .caja-boton-buscar-tienda {
-        display: none;
+    display: flex;
     }
-/*Cierre boton buscar tienda*/
 
-/*Boton Ayuda*/
+
+    /*Boton Ayuda*/
     .caja-boton-ayuda {
-        display: none;
+        display: flex;
+        justify-content: end;
     }
-/*Cierre boton ayuda*/
 
-/*Caja boton busqueda*/
+    /*Cierre boton ayuda*/
+
+    /*Caja boton busqueda*/
     .caja-boton-busqueda {
         display: none;
     }
-/*Cierre boton busqueda*/
 
-/*6 Cuotas sin interes*/
+    /*Cierre boton busqueda*/
+
+    /*6 Cuotas sin interes*/
     .caja-cuotas {
         display: flex;
         justify-content: center;
     }
-/*Cierre 6 Cuotas sin interes*/
+
+    /*Cierre 6 Cuotas sin interes*/
 
 
     /*========Cierre Header Mobile========*/
@@ -69,41 +76,42 @@
     /*========Main para Mobile========*/
 
     /*Imagenes botines,running, zapatillas, accesorios*/
-        .productos-index {
+    .productos-index {
         height: 200px;
-        width: 100% ;
+        width: 100%;
         padding: 15px;
-        }
+    }
 
-        .caja-fotos {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin: 10px;
-        }
+    .caja-fotos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 10px;
+    }
 
-        .h2-botines {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .h2-running {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .h2-zapatillas {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .h2-accesorios {
-            display: flex;
-            justify-content: center;
-        }
-/*Cierre Imagenes botines,running, zapatillas, accesorios*/
+    .h2-botines {
+        display: flex;
+        justify-content: center;
+    }
 
-/*Los mas vendidos*/
+    .h2-running {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h2-zapatillas {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h2-accesorios {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Cierre Imagenes botines,running, zapatillas, accesorios*/
+
+    /*Los mas vendidos*/
     .mas-vendido {
         width: 100%;
         height: 70px;
@@ -114,24 +122,26 @@
     }
 
     .span-mas-vendidos {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-/*Cierre Los mas vendidos*/
 
-/*Boton Suscribite*/
+    /*Cierre Los mas vendidos*/
+
+    /*Boton Suscribite*/
     .suscribite {
         display: grid;
         justify-content: center;
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-/*Cierre boton suscribite*/
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 
-/*Titulo e imagenes Navega por Marcas*/
+    /*Cierre boton suscribite*/
+
+    /*Titulo e imagenes Navega por Marcas*/
     .span-marcas {
         display: flex;
         justify-content: center;
@@ -145,58 +155,96 @@
     }
 
     .foto-marca {
-        width: 100% ;
+        width: 100%;
         height: 50px;
     }
-/*Cierre Titulo e imagenes Navega por Marcas*/
+
+    /*Cierre Titulo e imagenes Navega por Marcas*/
 
 
-}/*========Cierre main para Mobile========*/
+}
+
+/*========Cierre main para Mobile========*/
 
 
-    /*========Header para Tablet========*/
+/*========Header para Tablet========*/
 
-    @media(min-width:768px) and (max-width:1024px) {
 
-/*Caja boton busqueda, buscar tienda* y boton ayuda*/
-    .caja-boton-busqueda {
-    display:none ;
+@media(min-width:768px) and (max-width:1024px) {
+
+
+
+    /*Organizacion de nav*/
+    .grid-cajas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .boton-buscar-tienda {
-        display: none;
+    /*Cierre Organizacion de nav*/
+
+    /*Titulo y logo*/
+    .caja-h1-logo {
+        color: $color-negro;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .header-titulo {
+        grid-column: 1/2;
+    }
+
+    /*Cierre Titulo y logo*/
+
+    /*Boton buscar tienda, ayuda y realizar busqueda*/
+    .caja-boton-buscar-tienda {
+        grid-column: 4;
     }
 
     .caja-boton-ayuda {
-        display: none;
+        grid-column: 4;
+        margin-left: 22px;
     }
 
     .caja-barra-navegacion {
-    margin:auto;
-    grid-column: 2 / span 3;
-    margin-left: 20px;
+        grid-column: 2;
     }
-/*Cierre Caja boton busqueda, buscar tienda* y boton ayuda*/
 
-/*6 Cuotas sin interes*/
+    .caja-boton-busqueda {
+    display:none;
+    }
+
+    .boton-busqueda {
+        display: none;
+    }
+
+    /*Boton buscar tienda, ayuda y realizar busqueda*/
+
+    /*6 Cuotas sin interes*/
     .caja-cuotas {
+        grid-column: -4/-3;
         display: flex;
         justify-content: center;
-        align-items: center;
         margin-top: 20px;
-        margin-left: 50px;
     }
-/*Cierre 6 cuotas sin interes*/
 
-/*Barra navegacion, secciones*/
+    /*Cierre 6 Cuotas sin interes*/
+
+    /*Secciones, hombre, mujer, niño, accesorios*/
     .lista-nav {
         display: flex;
+        align-items: center;
         justify-content: center;
-        gap: 60px;
-        margin-top: 20px;
-        font-size: 20px;
+        gap: 20px;
     }
-/*Cierre Barra navegacion secciones*/
+
+    /*Cierre Secciones, hombre, mujer, niño, accesorios*/
+
+    /*Cierre Secciones, hombre, mujer, niño, accesorios*/
+
+
+
+    /*Cierre Barra navegacion secciones*/
 
 
     /*========Cierre Header para Tablet========*/
@@ -221,22 +269,26 @@
         display: flex;
         justify-content: center;
     }
+
     .h2-botines {
         display: flex;
         justify-content: center;
     }
+
     .h2-running {
         display: flex;
         justify-content: center;
     }
+
     .h2-zapatillas {
         display: flex;
         justify-content: center;
     }
+
     /*Cierre Fotos running botines zapatillas accesorios*/
 
 
-/*Titulo e imagenes mas vendido*/
+    /*Titulo e imagenes mas vendido*/
     .mas-vendido {
         width: 100%;
         height: 100px;
@@ -247,33 +299,35 @@
     }
 
     .span-mas-vendidos {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-/*Cierre Titulo e imagenes mas vendido*/
+
+    /*Cierre Titulo e imagenes mas vendido*/
 
 
-/*Boton Suscribite*/
+    /*Boton Suscribite*/
     .suscribite {
-    display: grid;
-    justify-content: center;
+        display: grid;
+        justify-content: center;
         margin-top: 40px;
         margin-bottom: 40px;
     }
-/*Boton Suscribite*/
 
-/*Navega por marcas*/
-    .span-marcas{
+    /*Boton Suscribite*/
+
+    /*Navega por marcas*/
+    .span-marcas {
         display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 25px;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 25px;
     }
 
-    .foto-marca{
+    .foto-marca {
         width: 100%;
         height: 100px;
         padding: 5px;
@@ -282,26 +336,29 @@
     .navega-por-marcas {
         display: flex;
     }
-/*Cierre Navega por marcas*/
+
+    /*Cierre Navega por marcas*/
 
 
-    /*========Cierre de Main para Tablet========*/}
+    /*========Cierre de Main para Tablet========*/
+}
 
 
-    /*========Header Deskop========*/
+/*========Header Deskop========*/
 
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
-/*Organizacion de nav*/
+    /*Organizacion de nav*/
     .grid-cajas {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 100px;
     }
-/*Cierre Organizacion de nav*/
 
-/*Titulo y logo*/
-    .caja-h1-logo{
+    /*Cierre Organizacion de nav*/
+
+    /*Titulo y logo*/
+    .caja-h1-logo {
         color: $color-negro;
         display: flex;
         align-items: center;
@@ -309,11 +366,12 @@
     }
 
     .header-titulo {
-    grid-column: 1/2;
+        grid-column: 1/2;
     }
-/*Cierre Titulo y logo*/
 
-/*Boton buscar tienda, ayuda y realizar busqueda*/
+    /*Cierre Titulo y logo*/
+
+    /*Boton buscar tienda, ayuda y realizar busqueda*/
     .caja-boton-buscar-tienda {
         grid-column: 4/-2;
         margin-left: 710px;
@@ -332,25 +390,28 @@
     }
 
     .boton-busqueda {
-    display: flex;
-    gap: 20px;
+        display: flex;
+        gap: 20px;
     }
-/*Boton buscar tienda, ayuda y realizar busqueda*/
 
-/*6 Cuotas sin interes*/
-    .caja-cuotas{
-        grid-column: 3/4;
-        margin-left: 170px;
+    /*Boton buscar tienda, ayuda y realizar busqueda*/
+
+    /*6 Cuotas sin interes*/
+    .caja-cuotas {
+            grid-column: -2;
+            font-size: 15px;
     }
-/*Cierre 6 Cuotas sin interes*/
 
-/*Secciones, hombre, mujer, niño, accesorios*/
+    /*Cierre 6 Cuotas sin interes*/
+
+    /*Secciones, hombre, mujer, niño, accesorios*/
     .lista-nav {
         display: flex;
         justify-content: center;
         gap: 150px;
     }
-/*Cierre Secciones, hombre, mujer, niño, accesorios*/
+
+    /*Cierre Secciones, hombre, mujer, niño, accesorios*/
 
 
     /*========Cierre Header Deskop========*/
@@ -358,18 +419,19 @@
 
     /*========Main========*/
 
-/*Botines, running zapatillas accesorios*/
+    /*Botines, running zapatillas accesorios*/
     .caja-fotos {
         display: flex;
         padding-top: 20px;
     }
 
     .productos-index {
-        height:350px;
+        height: 350px;
         width: 100%;
         padding: 15px;
     }
-/*Cierre Botines, running zapatillas accesorios*/
+
+    /*Cierre Botines, running zapatillas accesorios*/
 
     h2 {
         display: flex;
@@ -377,7 +439,7 @@
     }
 
 
-/*Productos mas vendidos*/
+    /*Productos mas vendidos*/
     .span-mas-vendidos {
         display: flex;
         justify-content: center;
@@ -387,8 +449,8 @@
     }
 
     .mas-vendido {
-    display: flex;
-    width: 400px;
+        display: flex;
+        width: 400px;
     }
 
     .article-mas-vendidos {
@@ -399,54 +461,57 @@
     }
 
     .span-mas-vendidos {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
-/*Cierre Productos mas vendidos*/
 
-/*Boton suscribite*/
+    /*Cierre Productos mas vendidos*/
+
+    /*Boton suscribite*/
     .suscribite {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    margin-top: 100px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        margin-top: 100px;
     }
 
-.form-suscribite {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
+    .form-suscribite {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
 
-.strong-suscribite {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+    .strong-suscribite {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
     .suscribite {
-    display: grid;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 100px;
+        display: grid;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 100px;
     }
-/*Cierre Boton suscribite*/
 
-/*Navega por marcas*/
-.span-marcas {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-    font-size: 25px;
-}
+    /*Cierre Boton suscribite*/
 
-.navega-por-marcas {
-    display: flex;
-    width: 100%;
-}
+    /*Navega por marcas*/
+    .span-marcas {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .navega-por-marcas {
+        display: flex;
+        width: 100%;
+    }
 
 
     .span-marcas {
@@ -471,8 +536,11 @@
 
     .foto-marca {
         width: 100%;
-        height:200px;
+        height: 200px;
     }
-/*Cierre Navega por marcas*/
 
-    } /*----Cierre de main desktop----*/
+    /*Cierre Navega por marcas*/
+
+}
+
+/*----Cierre de main desktop----*/

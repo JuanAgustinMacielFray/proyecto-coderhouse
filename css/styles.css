@@ -207,6 +207,19 @@ footer {
   /*Cierre redes*/
   /*Cierre media*/
 }
+/*Boton buscar tienda*/
+.boton-buscar-tienda:hover {
+  background-color: rgb(202, 202, 202);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.boton-ayuda:hover {
+  background-color: rgb(202, 202, 202);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
 /*Boton comprar*/
 .boton {
   border-radius: 10px;
@@ -256,6 +269,7 @@ footer {
   width: auto;
   display: flex;
   align-items: center;
+  font-family: "Verdana", sans-serif;
 }
 
 .img-producto {
@@ -341,12 +355,12 @@ footer {
   /*Cierre Titulo e Imagen con logo*/
   /*Boton buscar tienda*/
   .caja-boton-buscar-tienda {
-    display: none;
+    display: flex;
   }
-  /*Cierre boton buscar tienda*/
   /*Boton Ayuda*/
   .caja-boton-ayuda {
-    display: none;
+    display: flex;
+    justify-content: end;
   }
   /*Cierre boton ayuda*/
   /*Caja boton busqueda*/
@@ -431,42 +445,61 @@ footer {
     height: 50px;
   }
   /*Cierre Titulo e imagenes Navega por Marcas*/
-} /*========Cierre main para Mobile========*/
+}
+/*========Cierre main para Mobile========*/
 /*========Header para Tablet========*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*Caja boton busqueda, buscar tienda* y boton ayuda*/
+  /*Organizacion de nav*/
+  .grid-cajas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /*Cierre Organizacion de nav*/
+  /*Titulo y logo*/
+  .caja-h1-logo {
+    color: #000000;
+    display: flex;
+    align-items: center;
+  }
+  .header-titulo {
+    grid-column: 1/2;
+  }
+  /*Cierre Titulo y logo*/
+  /*Boton buscar tienda, ayuda y realizar busqueda*/
+  .caja-boton-buscar-tienda {
+    grid-column: 4;
+  }
+  .caja-boton-ayuda {
+    grid-column: 4;
+    margin-left: 22px;
+  }
+  .caja-barra-navegacion {
+    grid-column: 2;
+  }
   .caja-boton-busqueda {
     display: none;
   }
-  .boton-buscar-tienda {
+  .boton-busqueda {
     display: none;
   }
-  .caja-boton-ayuda {
-    display: none;
-  }
-  .caja-barra-navegacion {
-    margin: auto;
-    grid-column: 2/span 3;
-    margin-left: 20px;
-  }
-  /*Cierre Caja boton busqueda, buscar tienda* y boton ayuda*/
+  /*Boton buscar tienda, ayuda y realizar busqueda*/
   /*6 Cuotas sin interes*/
   .caja-cuotas {
+    grid-column: -4/-3;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 20px;
-    margin-left: 50px;
   }
-  /*Cierre 6 cuotas sin interes*/
-  /*Barra navegacion, secciones*/
+  /*Cierre 6 Cuotas sin interes*/
+  /*Secciones, hombre, mujer, niño, accesorios*/
   .lista-nav {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 60px;
-    margin-top: 20px;
-    font-size: 20px;
+    gap: 20px;
   }
+  /*Cierre Secciones, hombre, mujer, niño, accesorios*/
+  /*Cierre Secciones, hombre, mujer, niño, accesorios*/
   /*Cierre Barra navegacion secciones*/
   /*========Cierre Header para Tablet========*/
   /*========Main para Tablet========*/
@@ -582,8 +615,8 @@ footer {
   /*Boton buscar tienda, ayuda y realizar busqueda*/
   /*6 Cuotas sin interes*/
   .caja-cuotas {
-    grid-column: 3/4;
-    margin-left: 170px;
+    grid-column: -2;
+    font-size: 15px;
   }
   /*Cierre 6 Cuotas sin interes*/
   /*Secciones, hombre, mujer, niño, accesorios*/
@@ -694,7 +727,8 @@ footer {
     height: 200px;
   }
   /*Cierre Navega por marcas*/
-} /*----Cierre de main desktop----*/
+}
+/*----Cierre de main desktop----*/
 @media (min-width: 400px) and (max-width: 768px) {
   .productos-accesorios {
     display: flex;
@@ -725,12 +759,6 @@ footer {
   }
   /*Cierre Barra navegacion*/
   /*Boton buscar tienda ayuda y realizar busqueda*/
-  .caja-boton-buscar-tienda {
-    display: none;
-  }
-  .caja-boton-ayuda {
-    display: none;
-  }
   .caja-boton-busqueda {
     display: none;
   }
@@ -764,6 +792,78 @@ footer {
   }
   /*Cierre Redes sociales*/
   /*========cierre Main HOMBRE desktop========*/
+}
+/*Localizacion, mapa de tienda*/
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 240px;
+}
+
+/*Productos exclusivos en nuestras tiendas*/
+.strong-tiendas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+@media (min-width: 1024px) {
+  .mapa-responsive {
+    display: none;
+  }
+}
+@media (min-width: 400px) and (max-width: 1024px) {
+  .mapa {
+    display: none;
+  }
+}
+@media (min-width: 400px) and (max-width: 768px) {
+  .mapa-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mapa-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.preguntas-frecuentes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.acordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.strong-acordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
